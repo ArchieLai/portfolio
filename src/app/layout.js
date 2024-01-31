@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 
 export const metadata = {
   title: "Archie Lai",
@@ -11,14 +12,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className="menu">
-          <div className="logo">AL</div>
+          <Link className="logo" href="/">AL</Link>
           <div className="link-container" >
             <Link className="link" href="/about">About</Link>
-            <Link className="link" href="/">Works</Link>
+            <Link className="link" href="/works">Works</Link>
           </div>
         </div>
         <div className="content">
-          {children}
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>{children}</AppRouterCacheProvider>
         </div>
       </body>
     </html>

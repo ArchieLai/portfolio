@@ -1,6 +1,6 @@
 import list from "../list"
 import Image from "next/image";
-import { getImagePath } from "@/app/utils/utils";
+import { getImagePath } from "@/app/utils/path";
 import styles from "./page.module.css";
 
 export function generateStaticParams() {
@@ -21,19 +21,20 @@ export default function Page({ params }) {
         <span>{list[id].intro}</span>
       </div>
       <div className={styles.imgContainer}>
-        {imgNames.map((img) => {
+        {imgNames.map((img, index) => {
           if (img!==".DS_Store"){
             const imgPath = `/images/posts/${id}/${img}`;
             return (
               <Image 
-                key={id}
+                priority
+                key={index}
                 src={imgPath}
                 width={1070}
                 height={580}
-                style={{
-                  objectFit: square ? "contain" : "cover",
-                  objectPosition: "50% 50%" 
-                }}/>
+                style={{objectFit: square ? "contain" : "cover"}}
+                className={styles.image}
+                alt="image"
+              />
             );
           }
         })}
