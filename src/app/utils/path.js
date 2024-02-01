@@ -1,5 +1,9 @@
 import fs from 'fs';
 import path from 'path';
+/* 
+ If you use fs, be sure it's only within getInitialProps or getServerSideProps. 
+ (anything includes server-side rendering).
+*/
 
 export function getImagePath(id) {
   const postsDirectory = path.join(process.cwd(), `public/images/posts/${id}`);

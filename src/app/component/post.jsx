@@ -19,6 +19,8 @@ export default function Post(props){
     setAnchorEl(null);
   };
 
+  const popWidth = Number(props.width);
+  const popHeight = Number(props.height)-20;
   return(
     <>
       <Link href={`/posts/${props.index}`}>
@@ -26,8 +28,8 @@ export default function Post(props){
           priority
           key={props.index}
           src={props.cover}
-          width={640}
-          height={450}
+          width={props.width}
+          height={props.height}
           alt="cover"
           className={styles.image}
           onMouseOver={handleOpen}
@@ -47,11 +49,17 @@ export default function Post(props){
               borderRadius: '0px',
               background: 'rgba(255, 255, 255, 0.7)',
               boxShadow: 0
-          }, zIndex: 1}}
+            }
+          }}
+          className={styles.pop}
         >
           <Box 
             onMouseLeave={handleClose} 
             className={styles.box}
+            sx={{
+              width: popWidth,
+              height: popHeight,
+            }}
             >{props.title}
           </Box>
         </Popover>

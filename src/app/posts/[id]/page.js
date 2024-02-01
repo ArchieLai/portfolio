@@ -1,4 +1,4 @@
-import list from "../list"
+import {list} from "../list"
 import Image from "next/image";
 import { getImagePath } from "@/app/utils/path";
 import styles from "./page.module.css";
@@ -29,8 +29,8 @@ export default function Page({ params }) {
                 priority
                 key={index}
                 src={imgPath}
-                width={1070}
-                height={580}
+                width={870}
+                height={615}
                 style={{objectFit: square ? "contain" : "cover"}}
                 className={styles.image}
                 alt="image"
@@ -39,7 +39,6 @@ export default function Page({ params }) {
           }
         })}
       </div>
-      <br/>
     </div>
   );
 }
