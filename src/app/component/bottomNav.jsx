@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import HomeIcon from '@mui/icons-material/Home';
@@ -21,12 +20,12 @@ export default function BottomNav() {
   return (
     <div>
       <BottomNavigation
-        showLabels
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
         className={styles.buttonContain}
+        sx={{background: "rgba(0,0,0,0)"}}
       >
         <BottomNavigationAction 
           className={styles.buttonNav} 

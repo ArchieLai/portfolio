@@ -1,69 +1,51 @@
 'use client';
+import React, { useState } from 'react';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
+import Box from '@mui/material/Box';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from './page.module.css';
 
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Popover, Box } from '@mui/material';
+const Post= (props) => {
+  const [isHovered, setHovered] = useState(false);
+  const h = Number(props.height);
+  const w = Number(props.width);
 
-export default function Post(props){
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const id = open ? 'simple-popover' : undefined;
-
-  //event handles
-  const handleOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleMouseEnter = () => {
+    setHovered(true);
   };
-  const handleClose = () => {
-    setAnchorEl(null);
+  const handleMouseLeave = () => {
+    setHovered(false);
   };
 
-  const popWidth = Number(props.width);
-  const popHeight = Number(props.height)-20;
-  return(
-    <>
+  return (
+    <Card className={styles.card} sx={{ width: w, height: h}}>
       <Link href={`/posts/${props.index}`}>
-        <Image
-          priority
-          key={props.index}
-          src={props.cover}
-          width={props.width}
-          height={props.height}
-          alt="cover"
-          className={styles.image}
-          onMouseOver={handleOpen}
-        />
-        <Popover
-          key={id}
-          open={open}
-          anchorEl={anchorEl}
-          onClose={handleClose}
-          marginThreshold={null} //how close to the edge of the window the popover can appear.
-          disableScrollLock={true} //able to scroll down when Popover is opened
-          anchorOrigin={{
-            vertical: 'top',
-            horizontal: 'left',
-          }}
-          sx={{'& .MuiPaper-root': {
-              borderRadius: '0px',
-              background: 'rgba(255, 255, 255, 0.7)',
-              boxShadow: 0
-            }
-          }}
-          className={styles.pop}
+        <Box
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          sx={{position: "relative"}}
         >
-          <Box 
-            onMouseLeave={handleClose} 
-            className={styles.box}
-            sx={{
-              width: popWidth,
-              height: popHeight,
-            }}
-            >{props.title}
-          </Box>
-        </Popover>
+          <CardMedia
+            component={() => (
+              <Image
+                alt="Image"
+                className={styles.img}
+                src={props.cover}
+                width={w}
+                height={h}
+              />
+            )}
+          />
+          {isHovered && (
+            <Box className={styles.box} sx={{fontSize: 36}}>
+              {props.title}
+            </Box>
+          )}
+        </Box>
       </Link>
-    </>
+    </Card>
   );
-}
+};
+export default Post;

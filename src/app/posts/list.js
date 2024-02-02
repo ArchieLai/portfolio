@@ -50,7 +50,7 @@ const list = [
   },
   {
     id: 7,
-    title: "Circular house",
+    title: "House of stairs",
     year: "2018",
     intro: "A house of connected rooms.",
     square: true
@@ -130,6 +130,13 @@ const list = [
     title: "Historic buildings",
     year: "2018",
     intro: "Plans and sections of historic buildings.",
+    square: true
+  },
+  {
+    id: 19,
+    title: "Folding space",
+    year: "2015",
+    intro: "Conceptual architecture.",
     square: true
   },
 ];

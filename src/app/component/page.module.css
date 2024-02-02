@@ -1,19 +1,24 @@
 /* post.jsx */
-.image {
+.img{
   object-fit: cover;
   object-position: 50% 50%;
+}
+.card {
+  border-radius: 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .box {
-  margin: 0;
-  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
   font-family: serif;
-  text-align: center;
-  padding-top: 20px;
-  text-align: center;
-}
-.pop {
-  z-index: 1;
 }
 
 /* nav.jsx */
@@ -56,7 +61,7 @@
   padding: 0;
 }
 .buttonContain {
-  background-color: #e2eeec;
+  background-color: rgba(0,0,0,0);
   display: flex;
   justify-content: space-evenly;
   margin-right: 50px;
