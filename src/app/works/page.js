@@ -17,9 +17,9 @@ export default function Works(){
             key={index}
             cover={cover} 
             index={index} 
-            title={list[index].title} 
-            width="640"
-            height="450"
+            title={list[index].title}
+            width={640}
+            height={450}
           />
         );
       })}

@@ -8,7 +8,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import styles from "./page.module.css";
 import { useRouter } from 'next/navigation'
 
-
 export default function BottomNav() {
   const [value, setValue] = React.useState(3);
   const router = useRouter();
@@ -18,27 +17,25 @@ export default function BottomNav() {
   };
 
   return (
-    <div>
+    <div className={styles.buttonContain}>
       <BottomNavigation
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
         }}
-        className={styles.buttonContain}
-        sx={{background: "rgba(0,0,0,0)"}}
+        sx={{
+          background: "rgba(0,0,0,0)",
+        }}
       >
         <BottomNavigationAction 
-          className={styles.buttonNav} 
           icon={<div className={styles.buttonDiv}><HomeIcon /><span>Home</span></div>}          
           onClick={(e) => handleClick(e, "/")} 
         />
         <BottomNavigationAction 
-          className={styles.buttonNav} 
           icon={<div className={styles.buttonDiv}><GridViewIcon /><span>Works</span></div>} 
           onClick={(e) => handleClick(e, "/works")} 
         />
         <BottomNavigationAction 
-          className={styles.buttonNav} 
           icon={<div className={styles.buttonDiv}><PersonIcon /><span>About</span></div>} 
           onClick={(e) => handleClick(e, "/about")}
         />

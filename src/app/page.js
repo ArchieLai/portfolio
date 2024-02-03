@@ -23,8 +23,8 @@ export default function Home() {
               cover={imgPaths[index]} 
               index={Id} 
               title={list[Id].title} 
-              width="620"
-              height="420"
+              width={620}
+              height={420}
             />
           );
         })}

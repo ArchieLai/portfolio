@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: auto auto; 
   background-color: #EBECE2;
-  padding: 100px 50px 50px 50px;
+  padding: 50px 50px 50px 50px;
   margin: 0;
   column-gap: 60px;
   row-gap: 60px;

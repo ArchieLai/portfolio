@@ -9,8 +9,8 @@ import styles from './page.module.css';
 
 const Post= (props) => {
   const [isHovered, setHovered] = useState(false);
-  const h = Number(props.height);
-  const w = Number(props.width);
+  const h = props.height;
+  const w = props.width;
 
   const handleMouseEnter = () => {
     setHovered(true);
@@ -20,13 +20,14 @@ const Post= (props) => {
   };
 
   return (
-    <Card className={styles.card} sx={{ width: w, height: h}}>
+    <Card 
+      className={styles.card} 
+      sx={{ width: w, height: h}} 
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <Link href={`/posts/${props.index}`}>
-        <Box
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          sx={{position: "relative"}}
-        >
+        <div style={{position: "relative"}}>
           <CardMedia
             component={() => (
               <Image
@@ -39,11 +40,11 @@ const Post= (props) => {
             )}
           />
           {isHovered && (
-            <Box className={styles.box} sx={{fontSize: 36}}>
+            <Box className={styles.box}>
               {props.title}
             </Box>
           )}
-        </Box>
+        </div>
       </Link>
     </Card>
   );

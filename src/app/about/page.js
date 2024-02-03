@@ -18,13 +18,16 @@ export default function About(){
             <br /><br />
             <span>{introduction[1]}</span>
           </div>
-          <Image 
-            src="/images/about/person.jpg" 
-            width={300}
-            height={300}
-            alt="photo"
-            className={styles.image}
-          />
+          <div className={styles.imgContain}>
+            <Image
+              priority 
+              src="/images/about/person.jpg" 
+              width={300}
+              height={300}
+              alt="photo"
+              className={styles.image}
+            />
+          </div>
         </div>
         <h1>Contact</h1>
         <div className={styles.contactContainer}>
@@ -34,7 +37,7 @@ export default function About(){
               className={styles.link} 
               href="https://github.com/ArchieLai"
               target="_blank"         //attribute of anchor tag
-              >Github profile</Link>
+              ><span>Github profile</span></Link>
           </div>
           <div className={styles.contactSub}>
             <EmailIcon className={styles.icon}/>
@@ -42,7 +45,7 @@ export default function About(){
               className={styles.link} 
               href="mailto: archie.weichi@gmail.com"
               target="_blank"      
-              >archie.weichi@gmail.com</Link>
+              ><span>archie.weichi@gmail.com</span></Link>
           </div>
           <div className={styles.contactSub}>
             <MenuBookIcon className={styles.icon} />
@@ -50,7 +53,7 @@ export default function About(){
               className={styles.link}
               href=""
               target="_blank"
-            >My blog</Link>
+            ><span>My blog</span></Link>
           </div>
         </div>
       </div>

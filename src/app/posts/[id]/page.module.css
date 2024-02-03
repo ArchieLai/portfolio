@@ -1,14 +1,17 @@
 .container {
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding-bottom: 50px;
+  padding: 30px 20px 30px 20px;
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
 }
 .textContainer {
-  width: 1070px;
+  width: 870px;
   text-align: left;
+  max-width: 100%;
 }
 .imgContainer {
   display: flex;
@@ -18,4 +21,7 @@
 .image {
   object-position: 50% 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  aspect-ratio: calc(870/615);
+  height: auto;
 }

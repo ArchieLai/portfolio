@@ -95,7 +95,7 @@ const list = [
     title: "Office building",
     year: "2016",
     intro: "Office building design in Tainan.",
-    square: true
+    square: false
   },
   {
     id: 14,

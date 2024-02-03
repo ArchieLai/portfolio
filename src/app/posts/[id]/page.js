@@ -25,7 +25,7 @@ export default function Page({ params }) {
           if (img!==".DS_Store"){
             const imgPath = `/images/posts/${id}/${img}`;
             return (
-              <Image 
+              <Image
                 priority
                 key={index}
                 src={imgPath}
