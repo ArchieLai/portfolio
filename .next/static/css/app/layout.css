@@ -1,0 +1,137 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[7].use[3]!./src/app/component/page.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/* post.jsx */
+.page_img__EeXN7{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.page_card__Di0Lf {
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.page_box__RXRcK {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: serif;
+  font-size: 36px;
+  transition-timing-function: linear;
+  max-width: 100%;
+}
+
+/* nav.jsx */
+.page_menu__03788 {
+  background-color: #e2eeec;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 10;
+  @media (max-width: 768px) {
+    height: 60px;
+  }
+}
+.page_logo__UMDQ3 {
+  font-size: 60px;
+  padding-left: 20px;
+  color: black;
+  text-decoration:none;
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+}
+
+/* carousel.jsx */
+.page_mySwiper__5Sb_s {
+  width: 1000px; 
+  max-width: 100%;
+  aspect-ratio: 1000/600;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+
+  @media (max-width: 768px) {
+    aspect-ratio: 640/450;
+  }
+}
+.page_carousel__xVt5_ {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1000/600;
+  object-fit: cover;
+  object-position: 50% 50%;
+
+  @media (max-width: 768px) {
+    aspect-ratio: 640/450;
+  }
+}
+
+/* buttonNav */
+.page_buttonDiv__rzdW2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+}
+.page_buttonContain__D6W3Q {
+  width: 400px;
+  padding-right: 20px;
+  @media (max-width: 768px) {
+    width: 250px;
+    padding-right: 10px;
+  } 
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overscroll-behavior: none; 
+}
+h1 {
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+}
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0;
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+span {
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+.content {
+  width: 100%;
+  margin: 80px 0px 0px 0px;
+  @media (max-width: 768px) {
+    margin: 60px 0px 0px 0px;
+  }
+}
