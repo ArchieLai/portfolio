@@ -31,6 +31,7 @@ const Post= (props) => {
           <CardMedia
             component={() => (
               <Image
+                priority
                 alt="Image"
                 className={styles.img}
                 src={props.cover}

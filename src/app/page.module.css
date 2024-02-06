@@ -33,3 +33,37 @@
 .feature {
   font-family: serif;
 }
+
+/* not-found.js */
+.contain {
+  height: calc(100vh - 130px);
+  background-color: #EBECE2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 50px;
+  gap: 10px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    height: calc(100vh - 60px);
+  }
+}
+.btn {
+  background-color: #e2eeec;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+/* loading.js */
+.load {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
