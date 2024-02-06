@@ -22,7 +22,7 @@ const Post= (props) => {
   return (
     <Card 
       className={styles.card} 
-      sx={{ width: w, height: h}} 
+      sx={{ width: w, height: 'auto', aspectRatio: w/h}} 
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -36,12 +36,13 @@ const Post= (props) => {
                 src={props.cover}
                 width={w}
                 height={h}
+                style={{aspectRatio: w/h}}
               />
             )}
           />
           {isHovered && (
             <Box className={styles.box}>
-              {props.title}
+              <h2>{props.title}</h2>
             </Box>
           )}
         </div>

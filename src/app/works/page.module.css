@@ -1,11 +1,17 @@
 .container {
-  width: auto;
+  width: calc(100%-10vw);
   display: grid;
-  grid-template-columns: auto auto; 
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   background-color: #EBECE2;
-  padding: 50px 50px 50px 50px;
+  padding: 50px 5vw 50px 5vw;
   margin: 0;
-  column-gap: 60px;
-  row-gap: 60px;
-  justify-content: center;
+  column-gap: 5vw;
+  row-gap: 5vw;
+  justify-items: center;
+
+  @media (max-width: 768px) {
+    column-gap: 0px;
+    padding: 30px 20px 30px 20px;
+    grid-template-columns: repeat(1, minmax(100px, 1fr));
+  }
 }
