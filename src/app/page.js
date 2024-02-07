@@ -14,7 +14,7 @@ export default function Home() {
           pathList={carousel}
           ids={coverList}
         />
-        <h2 className={styles.feature}>Welcome to Archie Lai's Porfolio</h2>
+        <h2 className={styles.feature}>Welcome to Porfolio of Archie Lai</h2>
       </div>
       <div className={styles.container}>
         {imgList.map((Id, index) => {
