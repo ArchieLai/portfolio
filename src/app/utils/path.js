@@ -20,6 +20,6 @@ export function getCovers(ids){
     } else {
       imageName = images[0];
     }
-    return path.join(`/images/posts/${id}`, `${imageName}`)
+    return path.join(`/portfolio/images/posts/${id}`, `${imageName}`)
   })
 }

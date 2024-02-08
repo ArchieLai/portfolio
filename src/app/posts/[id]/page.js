@@ -23,7 +23,7 @@ export default function Page({ params }) {
       <div className={styles.imgContainer}>
         {imgNames.map((img, index) => {
           if (img!==".DS_Store"){
-            const imgPath = `/images/posts/${id}/${img}`;
+            const imgPath = `/portfolio/images/posts/${id}/${img}`;
             return (
               <Image
                 priority
