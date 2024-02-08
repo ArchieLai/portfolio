@@ -7,12 +7,12 @@
 }
 .main{
   max-width: 100%;
-  padding: 50px 5vw 0 5vw;
+  padding: 50px 5vw 5vw 5vw;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0;
-  gap: 50px;
+  gap: 5vw;
 }
 .container {
   max-width: 100%;
