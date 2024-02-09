@@ -1,7 +1,6 @@
 {
   "extends": [
     "next/core-web-vitals", // Keep this first for core web vitals checks
-    // "next/babel"            // Add this for Babel support
     "next"
   ]
 }

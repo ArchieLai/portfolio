@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Carousel(props){
   const carousel = props.pathList;
-  const matches = useMediaQuery('(min-width:600px)');
+  const matches = useMediaQuery('(min-width:768px)');
 
   return (
     <>

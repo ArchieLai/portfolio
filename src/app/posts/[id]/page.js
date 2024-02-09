@@ -1,7 +1,7 @@
 import {list} from "../list"
-import Image from "next/image";
 import { getImagePath } from "@/app/utils/path";
 import styles from "./page.module.css";
+import ShowImg from "@/app/component/showImg";
 
 export function generateStaticParams() {
   return list.map((post) => ({
@@ -25,15 +25,12 @@ export default function Page({ params }) {
           if (img!==".DS_Store"){
             const imgPath = `/portfolio/images/posts/${id}/${img}`;
             return (
-              <Image
-                priority
+              <ShowImg
                 key={index}
-                src={imgPath}
+                imgPath={imgPath}
                 width={870}
                 height={615}
-                style={{objectFit: square ? "contain" : "cover"}}
-                className={styles.image}
-                alt="image"
+                square={square}
               />
             );
           }

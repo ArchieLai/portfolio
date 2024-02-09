@@ -18,10 +18,3 @@
   flex-direction: column;
   gap: 40px;
 }
-.image {
-  object-position: 50% 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  max-width: 100%;
-  aspect-ratio: calc(870/615);
-  height: auto;
-}

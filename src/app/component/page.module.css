@@ -37,7 +37,7 @@
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   @media (max-width: 768px) {
     height: 60px;
   }
@@ -86,4 +86,17 @@
     width: 250px;
     padding-right: 10px;
   } 
+}
+
+/* backdrop.jsx */
+.backdropImg {
+  object-position: 50% 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  aspect-ratio: calc(870/615);
+  height: auto;
+}
+.modal {
+  max-width: 100%;
+  height: auto;
 }
