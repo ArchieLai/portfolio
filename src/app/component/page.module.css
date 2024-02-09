@@ -20,11 +20,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: black;
-  font-family: serif;
-  font-size: 36px;
   transition-timing-function: linear;
   max-width: 100%;
+}
+.boxText {
+  color: black;
+  font-family: serif;
 }
 
 /* nav.jsx */

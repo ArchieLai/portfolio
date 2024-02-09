@@ -43,7 +43,7 @@ const Post= (props) => {
           />
           {isHovered && (
             <Box className={styles.box}>
-              <h2>{props.title}</h2>
+              <h2 className={styles.boxText}>{props.title}</h2>
             </Box>
           )}
         </div>
