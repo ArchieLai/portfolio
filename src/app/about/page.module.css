@@ -2,8 +2,10 @@
   display: flex;
   justify-content: center;
   margin: 30px 80px 50px 80px;
+  min-height: calc(100vh - 210px);
   @media (max-width: 768px) {
     margin: 20px 30px 20px 30px;
+    min-height: calc(100vh - 150px);
   }
 }
 .container {

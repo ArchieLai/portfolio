@@ -1,6 +1,7 @@
 import "./globals.css";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import Nav from "./component/nav";
+import Footer from "./component/footer";
 
 export const metadata = {
   title: "Archie Lai",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <div className="content">
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>{children}</AppRouterCacheProvider>
         </div>
+        <Footer />
       </body>
     </html>
   );

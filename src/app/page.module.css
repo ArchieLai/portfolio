@@ -36,7 +36,7 @@
 
 /* not-found.js */
 .contain {
-  height: calc(100vh - 130px);
+  height: calc(100vh - 180px);
   background-color: #EBECE2;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   align-items: center;
 
   @media (max-width: 768px) {
-    height: calc(100vh - 60px);
+    height: calc(100vh - 160px);
   }
 }
 .btn {
