@@ -1,6 +1,7 @@
 const introduction=[
-  `Archie Lai is a licensed architect and junior software developer in Taiwan. He graduated from National Cheng Kung University, majoring in architecture. This website is the portfolio of his works on architectural design.`, 
-  `After two years of working experience in designing collective housing and urban renewal, he is now engaged in software development and currently studying in the department of information management at National Taiwan University.`
+  `As a licensed architect and software developer based in Taiwan, Archie graduated from National Cheng Kung University with a major in architecture. This portfolio serves as a demonstration of his diverse capabilities, showcasing a range of architectural projects and expertise in software development.`, 
+  `Archie's journey began with a focus on collective housing design and urban renewal. Driven by an intrinsic passion for technology, he made a pivotal career shift into software development. He's currently enrolled in the Department of Information Management at National Taiwan University.`
 ];
 
 export default introduction;
+
