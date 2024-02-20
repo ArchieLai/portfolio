@@ -9,6 +9,8 @@ export function generateStaticParams() {
   }));
 }
 
+export const dynamicParams = false;
+
 export default function Page({ params }) {
   const id = params.id;
   const imgNames = getImagePath(id);

@@ -6,7 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import GridViewIcon from '@mui/icons-material/GridView';
 import PersonIcon from '@mui/icons-material/Person';
 import styles from "./page.module.css";
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 export default function BottomNav() {
   const [value, setValue] = React.useState(3);
