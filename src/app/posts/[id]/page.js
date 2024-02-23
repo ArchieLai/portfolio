@@ -9,7 +9,7 @@ export function generateStaticParams() {
   }));
 }
 
-export const dynamicParams = false;
+// export const dynamicParams = false; (cause error)
 
 export default function Page({ params }) {
   const id = params.id;
@@ -18,9 +18,9 @@ export default function Page({ params }) {
   return (
     <div className={styles.container}>
       <div className={styles.textContainer}>
-        <h1>{list[id].title}</h1>
-        <h2>{list[id].year}</h2>
-        <span>{list[id].intro}</span>
+        <h1>{list[id]?.title}</h1>
+        <h2>{list[id]?.year}</h2>
+        <span>{list[id]?.intro}</span>
       </div>
       <div className={styles.imgContainer}>
         {imgNames.map((img, index) => {
