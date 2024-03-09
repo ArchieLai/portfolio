@@ -20,7 +20,7 @@ export default function About(){
           <div className={styles.imgContain}>
             <Image
               priority 
-              src="/portfolio/images/about/person.jpg" 
+              src="/portfolio/images/about/person.webp" 
               width={300}
               height={300}
               alt="photo"
