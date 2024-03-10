@@ -2,7 +2,7 @@
 This is a portfolio of my works on architectural design. It is a Next.js project utilizing MUI and deployed to Github Pages via Github Actions.
 
 * Website: https://archielai.github.io/portfolio/
-* Project project: https://hackmd.io/@archielai/HJi3xJzqa (Traditional Chinese)
+* Project note: https://hackmd.io/@archielai/HJi3xJzqa (Traditional Chinese)
 
 ## Getting Started
 ### 1. Installations
