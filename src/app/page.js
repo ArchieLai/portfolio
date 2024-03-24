@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import { getCovers } from "./utils/path";
 import Post from "./component/post";
-import {list, imgList, coverList} from "./posts/list";
+import {list, imgList, coverList} from "../../public/text/list";
 import Carousel from "./component/carousel";
 
 export default function Home() {

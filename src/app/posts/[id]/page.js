@@ -1,4 +1,4 @@
-import {list} from "../list"
+import {list} from "../../../../public/text/list"
 import { getImagePath } from "@/app/utils/path";
 import styles from "./page.module.css";
 import ShowImg from "@/app/component/showImg";

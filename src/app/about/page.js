@@ -1,10 +1,11 @@
 import styles from "./page.module.css";
-import introduction from "./introduction";
+import { introduction } from "../../../public/text/strings";
 import Image from "next/image";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Link from "next/link";
+import { base64String } from "../../../public/text/strings";
 
 export default function About(){
   return(
@@ -19,12 +20,14 @@ export default function About(){
           </div>
           <div className={styles.imgContain}>
             <Image
-              priority 
               src="/portfolio/images/about/person.webp" 
               width={300}
               height={300}
               alt="photo"
               className={styles.image}
+              priority={true}
+              placeholder="blur"
+              blurDataURL={base64String}
             />
           </div>
         </div>

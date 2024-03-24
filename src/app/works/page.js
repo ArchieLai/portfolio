@@ -1,4 +1,4 @@
-import {list} from "../posts/list";
+import {list} from "../../../public/text/list";
 import { getCovers } from "../utils/path";
 import styles from "./page.module.css";
 import Post from "../component/post";

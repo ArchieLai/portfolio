@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
+import { base64String } from '../../../public/text/strings';
 
 const Post= (props) => {
   const [isHovered, setHovered] = useState(false);
@@ -31,13 +32,14 @@ const Post= (props) => {
           <CardMedia
             component={() => (
               <Image
-                priority
                 alt="Image"
                 className={styles.img}
                 src={props.cover}
                 width={w}
                 height={h}
                 style={{aspectRatio: w/h}}
+                placeholder="blur"
+                blurDataURL={base64String}
               />
             )}
           />

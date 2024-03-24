@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import styles from './page.module.css';
 import Image from 'next/image';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import { base64String } from '../../../public/text/strings';
 
 export default function Carousel(props){
   const carousel = props.pathList;
@@ -33,11 +34,14 @@ export default function Carousel(props){
           return(
             <SwiperSlide key={index}>
               <Image 
+                priority={true}
                 src={imgPath} 
                 width={1000}
                 height={600}
                 className={styles.carousel}
                 alt='carousel'
+                placeholder='blur'
+                blurDataURL={base64String}
               />
             </SwiperSlide>
           );
